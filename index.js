@@ -105,8 +105,8 @@ Use the hungryDog function and feeding requirements below to do the following:
 
   Puppies less than 1 year
      2 - 4 months 10% of their body weight
-     4 - 7 months 5% of their body weight 
-     7 - 12 months 4% of their body weight
+     5 - 7 months 5% of their body weight 
+     8 - 12 months 4% of their body weight
     
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
@@ -114,17 +114,24 @@ Use the hungryDog function and feeding requirements below to do the following:
 function hungryDog(pounds, years){
 if (years >= 1 && pounds <= 5){
   return .05*pounds;
-} else if (years >= 1 && pounds >=6 || pounds <= 10){
+} else if (years >= 1 && pounds >=6 && pounds <= 10){
   return .04*pounds;
-} else if (years >= 1 && pounds >= 11 || pounds <=15){
+} else if (years >= 1 && pounds >= 11 && pounds <=15){
   return .03*pounds;
-} else if (years >= 1 && pounds >=15){
+} else if (years >= 1 && pounds >15){
   return .02*pounds;
+} else if (years >= 2/12 && years <= 4/12) {
+  return .1*pounds;
+} else if (years >= 5/12 && years <= 7/12){
+  return .05*pounds;
+} else if (years >= 8/12 && years <= 11.9999/12){
+  return .04*pounds;
+} else {
+  return "needs weight and age"
+}
 }
 
-}
-
-
+hungryDog(15, 1);
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
