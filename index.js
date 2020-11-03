@@ -151,16 +151,23 @@ Use the game function below to do the following:
   0-.33 = rock 
   .34-.66 = paper
   .67-1 = scissors
+
+  return: "you win!", "you lose!", "it's a tie"
 */
 
 function game(user, computer){
-var computer = Math.random();
+// var computer = Math.random(); //NOT SURE IF THIS LINE GOES OUTSIDE OF THE FUNCTION, BUT I THINK IT'S INSIDE BECAUSE IT'S STILL A GLOBAL VAR IF INSIDE FUNCTION//
+// // var user = Math.random(); //MIGHT NOT NEED THIS LINE HERE? Will this cause an error or will both numbers be random?//
+// let computer = result
+// if (result >= 0 && result <=.33){
+//   return "rock"
+// } else if (result >=.34 && result <=.66){
+//   return "paper"
+// } else {
+//   return "scissors"
+// }
 
-if ()
-
-}
-  
-  
+// }
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -173,10 +180,9 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-    /*add your code here*/
-  }
-
+function miles(kilometers){
+return kilometers*0.621371
+}
 
 
 //Task 5b - Feet to CM
