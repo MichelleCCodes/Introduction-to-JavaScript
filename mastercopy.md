@@ -18,10 +18,7 @@ Do the following:
    HINT: no function required
 */
 
-let votingAge = 19
-if (votingAge <= 18){
-  console.log(true)
-}
+
 
 /*
 Task 1b - Values
@@ -33,14 +30,10 @@ Do the following:
 
    HINT: no function required
 */
-let a = 2
-let b = 5
 
-if (a < b){
-  let a = a + b 
-}
 
-console.log(a)
+
+
 
 /*
 Task 1c - Convert Strings to Numbers
@@ -53,7 +46,8 @@ Do the following:
    HINT: look up the Number method
 */
 
-parseInt("1999");
+
+
 
 /*
 Task 1d - Multiply
@@ -64,9 +58,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(a, b){
-return a*b
+function multiply(/*add your code here*/){
+    /*add your code here*/
   }
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -78,11 +73,12 @@ Do the following:
    2. Use the received value to calculate the age in dog years (1 human year is equal to 7 dog years)
    3. Return the newly calculated age
 */
-function dogYears(age){
-return age * 7
+
+function dogYears(/*add your code here*/){
+    /*add your code here*/
 }
 
-dogYears(7);
+
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
