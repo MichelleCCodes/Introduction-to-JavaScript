@@ -150,10 +150,12 @@ Use the game function below to do the following:
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
 
-function game(user,computer){
 
-let computer = Math.random();
-let user = Math.random();
+
+
+function game(user,computer){
+  let computer = Math.random();
+  let user = Math.random();
 
 if (computer <=.33){
   return "rock"
@@ -221,7 +223,7 @@ Using the annoyingSong function below do the following:
 function annoyingSong(i){
 
       for (let i=99; i>=0; i--) {
-        console.log (i + " bottles of soda on the wall, " + i + " bottles of soda, take one down pass it around " + i-1 + " bottles of soda on the wall")
+        return (i + " bottles of soda on the wall, " + i + " bottles of soda, take one down pass it around " + i-1 + " bottles of soda on the wall")
       }
   }
 
