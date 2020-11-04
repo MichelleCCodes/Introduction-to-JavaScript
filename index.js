@@ -148,26 +148,37 @@ Use the game function below to do the following:
   RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
   
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
-  0-.33 = rock 
-  .34-.66 = paper
-  .67-1 = scissors
-
-  return: "you win!", "you lose!", "it's a tie"
 */
 
-function game(user, computer){
-// var computer = Math.random(); //NOT SURE IF THIS LINE GOES OUTSIDE OF THE FUNCTION, BUT I THINK IT'S INSIDE BECAUSE IT'S STILL A GLOBAL VAR IF INSIDE FUNCTION//
-// // var user = Math.random(); //MIGHT NOT NEED THIS LINE HERE? Will this cause an error or will both numbers be random?//
-// let computer = result
-// if (result >= 0 && result <=.33){
-//   return "rock"
-// } else if (result >=.34 && result <=.66){
-//   return "paper"
-// } else {
-//   return "scissors"
-// }
+function game(user,computer){
 
-// }
+let computer = Math.random();
+let user = Math.random();
+
+if (computer <=.33){
+  return "rock"
+} else if (computer <=.66){
+  return "paper"
+} else {
+  return "scissor"
+}
+
+if (user <=.33){
+  return "rock"
+} else if (user <=.66){
+  return "paper"
+} else {
+  return "scissor"
+}
+
+if (user === computer){
+  return "it's a tie"
+} else if (user === "rock" && computer ==="paper" || user === "paper" && computer === "scissor" || user === "scissor" && computer === "rock"){
+  return "you lose!"
+} else {
+  return "you win!"
+}
+}
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -184,7 +195,6 @@ function miles(kilometers){
 return kilometers*0.621371
 }
 
-
 //Task 5b - Feet to CM
 /*
 Using the feet function below do the following:
@@ -193,11 +203,10 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
-  }
+function feet(cm){
+return cm/30.48
+}
  
-
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -209,10 +218,12 @@ Using the annoyingSong function below do the following:
       "(number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
-  }
+function annoyingSong(i){
 
+      for (let i=99; i>=0; i--) {
+        console.log (i + " bottles of soda on the wall, " + i + " bottles of soda, take one down pass it around " + i-1 + " bottles of soda on the wall")
+      }
+  }
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -228,13 +239,22 @@ Using the grade function below do the following:
    60-69 =  D 
    below 60 = F
 */
-  
-function grade(/*add your code here*/){
-    /*add your code here*/
+
+function grade(score){
+if (score >=90 && score <= 100){
+  return "A"
+} else if (score >=80 && score <= 89){
+  return "B"
+} else if (score >=70 && score <= 79){
+  return "C"
+} else if (score >=60 && score <= 69){
+  return "D"
+  } else if (score <= 60){
+    return "F"
+  } else {
+    return "What is the score?"
   }
-  
-  
-  
+} 
   
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
